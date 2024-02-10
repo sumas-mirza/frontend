@@ -8,10 +8,12 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="nav-logo">
-        <img src={logo} alt="" />
-        <p>SHOPPER</p>
-      </div>
+      <Link style={{ textDecoration: "none" }} to={`/`}>
+        <div className="nav-logo">
+          <img src={logo} alt="" />
+          <p>SHOPPER</p>
+        </div>
+      </Link>
       <ul className="nav-menu">
         <li
           onClick={() => {
